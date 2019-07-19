@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-
 /*----------------Colours */
 
 .bg-color-name-title {
@@ -16,6 +15,10 @@
 
 .bg-color-work-history {
     background-color: #9b59b6;
+}
+
+.bg-color-contact {
+    background-color: #fff;
 }
 
 .ui-menu-color-home {
@@ -36,8 +39,8 @@
 
 /*----------------Special paddings/margins/text */
 
-h1,h2,h3,h4 {
-    margin:0;
+h1, h2, h3, h4 {
+    margin: 0;
 }
 
 .uppercase {
@@ -46,8 +49,8 @@ h1,h2,h3,h4 {
 
 .general-sub {
     font-family: "Exo", sans-serif;
-    font-weight:300;
-    color:#fafafa;
+    font-weight: 300;
+    color: #fafafa;
 }
 
 .inline-block {
@@ -64,8 +67,7 @@ h1,h2,h3,h4 {
     float: none;
 }
 
-.section-heading,
-.history-heading {
+.section-heading, .history-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
@@ -173,7 +175,7 @@ header {
 footer {
     background-color: #525252;
     color: #fafafa;
-    min-height:120px;
+    min-height: 120px;
     margin: 0;
 }
 
@@ -203,7 +205,7 @@ footer {
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
-    text-align:center;
+    text-align: center;
     color: #fafafa;
     background: #8f8f8f;
     transition: all 0.35s ease-in-out;
@@ -237,18 +239,15 @@ footer {
     margin-bottom: 20px;
     display: block;
     clear: both;
-
 }
 
-.personal-info-item .key,
-.personal-info-item .value {
+.personal-info-item .key, .personal-info-item .value {
     padding-right: 8px;
-    display:inline-block;
+    display: inline-block;
 }
 
-.personal-info-item .key p,
-.personal-info-item .value p {
-    margin:0;
+.personal-info-item .key p, .personal-info-item .value p {
+    margin: 0;
 }
 
 .personal-info-item .key {
@@ -265,8 +264,6 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
-
-
 }
 
 /*----------------Skills */
@@ -283,12 +280,11 @@ footer {
     font-weight: 400;
     padding: 3px 30px 2px 10px;
     color: #fafafa;
-    background-color: rgb(25,25,25,0.2);
+    background-color: rgb(25, 25, 25, 0.2);
 }
 
 .progress-section {
     margin: 40px 20px;
-
 }
 
 /*----------------Skills */
@@ -337,4 +333,39 @@ footer {
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/*----------------Contact form */
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+    border: none;
+    min-width:10%;
+}
+
+/*----------------Media Queries */
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 40px;
+        min-height: 260px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
