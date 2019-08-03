@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 /*----------------Colours */
 
+body {
+    background-color: #f4f4f4;
+}
+
 .bg-color-name-title {
     background-color: #676767;
 }
@@ -29,17 +33,25 @@
     background-color: #9b59b6;
 }
 
-.ui-menu-color-contact {
-    background-color: #3498db;
+.ui-menu-color {
+    background-color: #266fab;
 }
 
 .ui-menu-color-download {
     background-color: #525252;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 /*----------------Special paddings/margins/text */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -65,9 +77,11 @@ h1, h2, h3, h4 {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
+    height: 100%;
 }
 
-.section-heading, .history-heading {
+.section-heading,
+.history-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
@@ -81,7 +95,7 @@ header {
 }
 
 .heading {
-    margin-left: 50px;
+    text-align: center;
 }
 
 .logo {
@@ -97,10 +111,11 @@ header {
 
 .name {
     font-family: "Exo", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff;
+    color: #111613;
+
 }
 
 .title {
@@ -108,12 +123,16 @@ header {
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
-    margin-bottom: 90px;
-    color: #fff;
+    margin-bottom: 40px;
+    color: #111613;
 }
 
 .list-inline-item:not(:last-child) {
     margin: 0;
+}
+
+.list-inline-item {
+    padding: 0 10px;
 }
 
 .menu-container {
@@ -131,9 +150,14 @@ header {
 }
 
 .menuitem {
-    height: 120px;
+    height: 100px;
     text-align: center;
     padding: 0;
+}
+
+.menuitem-border {
+    border-right: 5px solid white;
+    border-left: 5px solid white;
 }
 
 .menuitem a {
@@ -167,7 +191,7 @@ header {
 
 .hvr-sweep-to-bottom:before {
     background: rgb(0, 0, 0, 0.2);
-    height: 120px;
+    height: 100px;
 }
 
 /*----------------Footer */
@@ -177,6 +201,11 @@ footer {
     color: #fafafa;
     min-height: 120px;
     margin: 0;
+    position: absolute;
+}
+
+#footer-details {
+    text-align: center;
 }
 
 .cv-pdf i {
@@ -195,27 +224,34 @@ footer {
 }
 
 .social-links {
-    padding-bottom: 15px;
+    text-align: center;
+    margin-top: 40px;
+
 }
 
 .social-links li a i {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     padding: 12px 0;
     border-radius: 50%;
-    font-size: 13px;
+    font-size: 30px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
+    margin-bottom: 40px;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
 
+.fa::before {
+    padding-top: 11px;
+}
+
 .social-links li a i:hover {
-    background: #e84610;
+    background: #266fab;
 }
 
 #footer-details {
@@ -241,12 +277,14 @@ footer {
     clear: both;
 }
 
-.personal-info-item .key, .personal-info-item .value {
+.personal-info-item .key,
+.personal-info-item .value {
     padding-right: 8px;
     display: inline-block;
 }
 
-.personal-info-item .key p, .personal-info-item .value p {
+.personal-info-item .key p,
+.personal-info-item .value p {
     margin: 0;
 }
 
@@ -290,14 +328,14 @@ footer {
 /*----------------Skills */
 
 .history-heading {
-    color: #fafafa;
+    color: #111613;
     margin-bottom: 50px;
 }
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
-    color: #fafafa;
+    color: #111613;
     border-left: 1px solid;
 }
 
@@ -328,11 +366,12 @@ footer {
     left: -6px;
     border-radius: 12px;
     content: '';
-    background: #fafafa;
+    background: #111613;
 }
 
 .history-items {
     margin-bottom: 30px;
+    color: #111613;
 }
 
 /*----------------Contact form */
@@ -356,7 +395,7 @@ button[type="submit"] {
     color: #fafafa;
     background-color: #e84610;
     border: none;
-    min-width:10%;
+    min-width: 10%;
 }
 
 /*----------------Media Queries */
