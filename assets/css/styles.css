@@ -83,7 +83,7 @@ h4 {
 .section-heading,
 .history-heading {
     font-family: "Exo", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 25px;
     margin-bottom: 40px;
 }
@@ -197,7 +197,7 @@ header {
 /*----------------Footer */
 
 footer {
-    background-color: #525252;
+    background-color: #8f8f8f;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
@@ -220,7 +220,7 @@ footer {
 }
 
 .cv-pdf i:hover {
-    color: #e84610;
+    color: #266fab;
 }
 
 .social-links {
@@ -366,7 +366,7 @@ footer {
     left: -6px;
     border-radius: 12px;
     content: '';
-    background: #111613;
+    background: #266fab;
 }
 
 .history-items {
@@ -393,7 +393,7 @@ button[type="submit"] {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #fafafa;
-    background-color: #e84610;
+    background-color: #266fab;
     border: none;
     min-width: 10%;
 }
@@ -407,4 +407,20 @@ button[type="submit"] {
         margin: 0 auto;
         max-width: 50%;
     }
+}
+
+@media(min-width: 768px) {
+    .menuitem-border-lr {
+        border-right: 5px solid #f4f4f4;
+        border-left: 5px solid #f4f4f4;
+    }
+}
+
+@media(max-width: 767px) {
+    .menuitem-border-tb {
+        border-top: 5px solid #f4f4f4;
+        border-bottom: 5px solid #f4f4f4;
+    }
+
+
 }
